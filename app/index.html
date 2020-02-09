@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -43,4 +43,154 @@
 
   <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+<!-----NAV------------------------------->
+    <div class="frontPage mainPage">
+        <div class="topnav" id="topnavbar">
+          <div class="topnav-centered">
+              <a href="#"><b>Home</b></a>
+              <a href="#tracker">Tracker</a>
+              <a href="#about">About</a>
+              <a href="search.html">SearchFoods</a>
+              <!-- Topnav bar responsiveness -->
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTopnav()">&#9776;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          Enable Notifications
+        </button>
+      </p>
+<!---------------Second page----------->
+      <div class="secondPage">
+         <img src="Images/image.png" alt="" />"
+         <div class="container" id=about>
+          <h3>About Us</h3>
+             <p>Fresh Til’ Friday is your little helper when it comes to reducing your Food Waste! </p>
+             <p>Hundreds of thousands of tonnes of food is thrown out each year while millions starve. It sits in landfill, releasing methane gas into our atmosphere. Fresh Til’ Friday want this to change. We offer a waste management solution which allows you to track your expiring produce. Your eggs only Fresh til’ Friday? No sweat, we’ll remind you to eat them before they go bad!Our vision is a world with less food poverty, less methane emissions and of course saving our users a bit of well-earned dosh.</p>
+             <p>Our team comprises of students who know only too well how difficult it is to balance budgets and a busy lifestyle when trying to reduce food waste. This is what inspired us to produce this tool.</p>
+         </div>
+      </div>
+      <div class="form" id=tracker>
+        <img src="Images/image-2.png" alt="" />
+
+        <div>
+          <h2> Just been Shopping?</h2>
+             <p> Don't forget to add your products below!</p>
+               <form>
+                 Product:<br>
+                <input type="text" name="Product" id = "Product"placeholder="Apple">
+                <br>
+                Expiry Date:<br>
+                <input type="text" name="Expiry_Date" id = "Expiry_date" placeholder="MM/DD/YYYY"><br>
+                Quantity:<br>
+                <input type="text" name="Quantity" id = "Quantity"placeholder="3">
+                <br>
+                <input type="button" onclick="Update_product()" value="Submit">
+                </form> 
+        </div>
+
+      </div>
+<!-------------Third Page----------------->
+     <div class="thirdPage">
+       <h3>In your kitchen you will find:</h3>
+            <table style="width:100%">
+               <tr>
+               <th>Quantity</th>
+               <th>Product</th>
+               <th>Days Left</th>
+               <th>Remove Item</th>
+               </tr>
+               <tr id>
+                 <td id = "quantity1"></td>
+                 <td id = "product1"></td>
+                 <td id = "days_left1"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(1)"/>&nbsp;</td>
+               </tr>
+               <tr>
+                 <td id = "quantity2"></td>
+                 <td id = "product2"></td>
+                 <td id = "days_left2"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(2)">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td id = "quantity3"></td>
+                 <td id = "product3"></td>
+                 <td id = "days_left3"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(3)">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td id = "quantity4"></td>
+                 <td id = "product4"></td>
+                 <td id = "days_left4"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(4)">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td id = "quantity5"></td>
+                 <td id = "product5"></td>
+                 <td id = "days_left5"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(5)">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td id = "quantity6"></td>
+                 <td id = "product6"></td>
+                 <td id = "days_left6"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(6)">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td id = "quantity7"></td>
+                 <td id = "product7"></td>
+                 <td id = "days_left7"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(6)">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td id = "quantity8"></td>
+                 <td id = "product8"></td>
+                 <td id = "days_left8"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(6)">&nbsp;</td>
+               </tr>
+               <tr>
+                 <td id = "quantity9"></td>
+                 <td id = "product9"></td>
+                 <td id = "days_left9"></td>
+                 <td><input type="button" value="Delete" onclick="delete_item(6)">&nbsp;</td>
+               </tr>
+            </table>
+
+      <div class="bottomCreds">
+          <p>© 2020, Fresh Til' Friday</p>
+    </div>
+
+      <button class="scrollupButton" onclick="window.location.href='#';"><i class="fa fa-angle-up" style="font-size:35px"></i></button>
+    </div>
+
+    <script src="scripts/main.js"></script>
+
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+  </body>
 </html>
